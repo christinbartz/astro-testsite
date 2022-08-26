@@ -1,0 +1,49 @@
+{
+  "content": [
+    {
+      "type": "Stage",
+      "image": "https://www.hannoversche.de/dam/wissenswert/rente_vorsorge/Todesfall-was-tun-qTDf5YL-2050x820-auto.jpg",
+      "headline": "Ein Todesfall: Was zu tun ist und worauf Sie achten sollten",
+      "text": "Kaum jemand weiß, was jetzt alles zu tun ist: Hier finden Angehörige Hilfe - mit allen Informationen und wertvoller Checkliste, die Orientierungshilfe bietet."
+    },
+    {
+      "type": "Headline",
+      "level": 2,
+      "text": "Informationen, Tipps und Hilfestellungen für Verwandte, Angehörige und engste Feunde"
+    },
+    {
+      "type": "Text",
+      "text": "Der Tod eines geliebten Menschen passiert fast immer plötzlich und überraschend, selbst wenn das Ende absehbar war. Und jetzt kommen auf die Angehörigen neben Schmerz und Trauer auch noch eine ganze Reihe von Aufgaben und Pflichten zu. In manchen Fällen hat der oder die Verstorbene selber vorgesorgt, zum Beispiel mit einem Testament und einer Sterbegeldversicherung, in anderen sind die Hinterbliebenen alleine gefordert. Wir erklären, was im Todesfall zu tun ist - und bieten mit der Todesfall-Checkliste zum Download wertvolle Unterstützung in den schwersten Stunden."
+    },
+    {
+      "type": "Row",
+      "content": [
+        {
+          "type": "Column",
+          "content": [
+            {
+              "type": "Headline",
+              "level": 3,
+              "text": "Jetzt Sterbegeldversicherung berechnen"
+            },
+            {
+              "type": "Text",
+              "text": "Eine Sterbegeldversicherung ist eine Sonderform der Kapitallebensversicherung und dient der Bestattungsvorsorge. Bei der Sterbegeldversicherung wird eine deutlich geringere Auszahlungssumme als bei einer Lebensversicherung vereinbart. Je nach Versicherer kann die Summe zwischen 1.000 EUR und 20.000 EUR liegen."
+            }
+          ]
+        },
+        { "type": "Column", "content": [{ "type": "Calculator" }] }
+      ]
+    },
+    {
+      "type": "Headline",
+      "level": 2,
+      "text": "Downloads zur Sterbeversicherung"
+    },
+    {
+      "type": "Download",
+      "headline": "Checkliste: Todesfall - was ist zu tun?",
+      "link": "https://www.hannoversche.de/dam/wissenswert/rente_vorsorge/Checkliste_Todesfall.pdf"
+    }
+  ]
+}
