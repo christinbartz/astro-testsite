@@ -1,17 +1,18 @@
 ---
 export interface Props {
     text: string;
+    level: number;
 }
 
-const { text } = Astro.props as Props;
+const { text, level } = Astro.props as Props;
+
+const El = "h" + level;
 ---
 
-<h2>
+<El>
     {text}
-</h2>
+</El>
 
 <style>
-    h2 {
-        color: purple;
-    }
+
 </style>
