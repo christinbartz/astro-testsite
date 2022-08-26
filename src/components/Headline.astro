@@ -1,0 +1,17 @@
+---
+export interface Props {
+    text: string;
+}
+
+const { text } = Astro.props as Props;
+---
+
+<h2>
+    {text}
+</h2>
+
+<style>
+    h2 {
+        color: purple;
+    }
+</style>

@@ -1,14 +1,21 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Headline from "../components/Headline.astro";
+import * as data from "../../public/data.json";
+
+const { content } = data;
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
+		<h1>Welcome to <span class="text-gradient">The Moon</span></h1>
+		<span><Headline text="Have some fun!" /></span>
+		<h2 class="text-gradient">Have some more fun!</h2>
 		<p class="instructions">
 			Check out the <code>src/pages</code> directory to get started.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
+			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message
+			above.
 		</p>
 		<ul role="list" class="link-card-grid">
 			<Card
