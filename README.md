@@ -1,4 +1,4 @@
-# Clemetine 🛰
+# Clementine 🛰
 
 A side project to test Astro (https://astro.build)
 
