@@ -1,0 +1,23 @@
+---
+export interface Props {
+    image: string;
+    headline: string;
+    text: string;
+}
+
+const { image, headline, text } = Astro.props as Props;
+---
+
+<div>
+    <img class="Image" src={image} />
+    <h2>{headline}</h2>
+    <p>{text}</p>
+</div>
+
+<style>
+    .Image {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+</style>
