@@ -1,0 +1,9 @@
+---
+import { Components } from "../components";
+
+const { type } = Astro.props;
+
+const Component = Components[type];
+---
+
+<Component {...Astro.props} />
