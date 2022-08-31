@@ -1,24 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import * as data from "../../public/data.json";
-import Stage from "../components/Stage.astro";
-import Text from "../components/Text.astro";
-import Headline from "../components/Headline.astro";
-import Card from "../components/Card.astro";
-import ItemToComponent from "../helpers/ItemToComponent.astro";
+import ComponentArea from "../helpers/ComponentArea.astro";
 
 const { content } = data;
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
-		<ul>
-			{
-				content.map((item) => (
-					<ItemToComponent type={item.type} {...item} />
-				))
-			}
-		</ul>
+		<ComponentArea content={content} />
 	</main>
 </Layout>
 
