@@ -1,1 +1,21 @@
-<div>Hier entsteht bald eine Komponente</div>
+---
+import ItemToComponent from "../helpers/ItemToComponent.astro";
+
+const { content } = Astro.props;
+---
+
+<div class="row">
+    {
+        content.map((item) => (
+            <div class="column">
+                <ItemToComponent type={item.type} {...item} />
+            </div>
+        ))
+    }
+</div>
+
+<style>
+    .row {
+        display: flex;
+    }
+</style>

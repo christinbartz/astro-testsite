@@ -5,11 +5,13 @@ import Card from "./components/Card.astro";
 import Column from "./components/Column.astro";
 import Download from "./components/Download.astro";
 import Row from "./components/Row.astro";
+import Calculator from "./components/Calculator.astro";
 
 export const Components = {
   Stage,
   Text,
   Headline,
+  Calculator,
   Card,
   Column,
   Download,
