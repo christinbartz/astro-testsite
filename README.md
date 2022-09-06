@@ -1,6 +1,6 @@
-# Clementine 🛰
+# Astro Testsite 🛰
 
-A side project to test Astro (https://astro.build)
+A tiny project to test Astro (https://astro.build)
 
 ## 🧞 Commands
 
