@@ -1,21 +1,15 @@
 ---
-import ItemToComponent from "../helpers/ItemToComponent.astro";
+import ComponentMapper from "../ComponentMapper.astro";
 
 const { content } = Astro.props;
 ---
 
 <div class="row">
-    {
-        content.map((item) => (
-            <div class="column">
-                <ItemToComponent type={item.type} {...item} />
-            </div>
-        ))
-    }
+  <ComponentMapper content={content} />
 </div>
 
 <style>
-    .row {
-        display: flex;
-    }
+  .row {
+    display: flex;
+  }
 </style>

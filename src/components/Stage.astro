@@ -1,37 +1,45 @@
 ---
-export interface Props {
-    image: string;
-    headline: string;
-    text: string;
-}
+import { Picture } from "@astrojs/image/components";
 
-const { image, headline, text } = Astro.props as Props;
+const { image, headline, text } = Astro.props;
 ---
 
 <div class="stage">
-    <img class="stage-image" src={image} />
-    <div class="stage-content">
-        <h2 class="textShadow">{headline}</h2>
-        <p>{text}</p>
-    </div>
+  <div class="stage-content">
+    <h2 class="textShadow">{headline}</h2>
+    <p>{text}</p>
+  </div>
+
+  <Picture
+    alt="lorem ipsum"
+    class="stage-image"
+    src={image}
+    aspectRatio="16:9"
+    fit="inside"
+    widths={[800, 1200]}
+    sizes="(min-width: 400px) 800px, 1200px"
+    quality={75}
+  />
 </div>
 
 <style>
-    .stage {
-        position: relative;
-        height: 300px;
-    }
+  .stage {
+    position: relative;
+  }
 
-    .stage-image {
-        width: 100%;
-        height: 300px;
-        object-fit: cover;
-        position: absolute;
-        top: 0;
-    }
+  .stage-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    position: relative;
+    z-index: 0;
+  }
 
-    .stage-content {
-        color: #fff;
-        text-shadow: 0 0 20px rgba(0, 0, 0, 0.25), 0 0 4px rgba(0, 0, 0, 0.4);
-    }
+  .stage-content {
+    color: #fff;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.25), 0 0 4px rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    top: 0;
+    position: absolute;
+  }
 </style>

@@ -1,7 +1,9 @@
 ---
-import ComponentArea from "../helpers/ComponentArea.astro";
+import ComponentMapper from "../ComponentMapper.astro";
 
 const { content } = Astro.props;
 ---
 
-<ComponentArea content={content} />
+<div class="column">
+  <ComponentMapper content={content} />
+</div>

@@ -1,14 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import * as data from "../../public/data.json";
-import ComponentArea from "../helpers/ComponentArea.astro";
+import ComponentMapper from "../ComponentMapper.astro";
 
 const { content } = data;
 ---
 
 <Layout title="Sterbegeldversicherung">
   <main>
-    <ComponentArea content={content} />
+    <ComponentMapper content={content} />
   </main>
 </Layout>
 

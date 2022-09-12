@@ -1,3 +1,4 @@
+---
 import Stage from "./components/Stage.astro";
 import Text from "./components/Text.astro";
 import Headline from "./components/Headline.astro";
@@ -7,7 +8,7 @@ import Download from "./components/Download.astro";
 import Row from "./components/Row.astro";
 import Calculator from "./components/Calculator.astro";
 
-export const Components = {
+const Components = {
   Stage,
   Text,
   Headline,
@@ -17,3 +18,13 @@ export const Components = {
   Download,
   Row,
 };
+
+const { content } = Astro.props;
+---
+
+{
+  content.map(item => {
+    const Component = Components[item.type];
+    return <Component {...item} />;
+  })
+}
