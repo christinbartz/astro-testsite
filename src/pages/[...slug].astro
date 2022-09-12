@@ -1,0 +1,31 @@
+---
+import data from "../../public/data.json";
+import Layout from "../layouts/Layout.astro";
+import ComponentMapper from "../ComponentMapper.astro";
+
+export async function getStaticPaths() {
+  const pages = data;
+
+  return pages.map(({ slug, title, content }) => {
+    return {
+      params: { slug },
+      props: { title, content },
+    };
+  });
+}
+
+const { title, content } = Astro.props;
+---
+
+<Layout title={title}>
+  <main>
+    <ComponentMapper content={content} />
+  </main>
+</Layout>
+
+<style>
+  main {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+</style>
