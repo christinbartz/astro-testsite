@@ -8,16 +8,30 @@ export interface Props {
 const { image, headline, text } = Astro.props as Props;
 ---
 
-<div>
-    <img class="Image" src={image} />
-    <h2>{headline}</h2>
-    <p>{text}</p>
+<div class="stage">
+    <img class="stage-image" src={image} />
+    <div class="stage-content">
+        <h2 class="textShadow">{headline}</h2>
+        <p>{text}</p>
+    </div>
 </div>
 
 <style>
-    .Image {
+    .stage {
+        position: relative;
+        height: 300px;
+    }
+
+    .stage-image {
         width: 100%;
         height: 300px;
         object-fit: cover;
+        position: absolute;
+        top: 0;
+    }
+
+    .stage-content {
+        color: #fff;
+        text-shadow: 0 0 20px rgba(0, 0, 0, 0.25), 0 0 4px rgba(0, 0, 0, 0.4);
     }
 </style>
